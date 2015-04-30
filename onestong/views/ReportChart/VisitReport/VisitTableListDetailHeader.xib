@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cxV-ob-pf5" customClass="VisitTableListDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="h24-17-LI5">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="10" style="plain" systemItem="fixedSpace" id="AgF-8W-tsS"/>
+                        <barButtonItem title="时间" width="47" id="b6W-uD-hU3"/>
+                        <barButtonItem width="21" style="plain" systemItem="fixedSpace" id="m5V-d9-gqe"/>
+                        <barButtonItem title="拜访" width="49" id="tDg-aB-rs1"/>
+                        <barButtonItem width="23" style="plain" systemItem="fixedSpace" id="rxQ-bT-sXg"/>
+                        <barButtonItem title="已签到" width="54" id="Gkb-TF-Rhj"/>
+                        <barButtonItem width="7" style="plain" systemItem="fixedSpace" id="ibK-eg-Sa9"/>
+                        <barButtonItem title="已签退" id="vQ4-gb-S3Y"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="mainToolBar" destination="h24-17-LI5" id="XfK-V2-mpo"/>
+                <outlet property="visitSignInItem" destination="Gkb-TF-Rhj" id="d2J-xd-CFT"/>
+                <outlet property="visitSignOutItem" destination="vQ4-gb-S3Y" id="Tpe-vC-ClF"/>
+                <outlet property="visitTimeItem" destination="b6W-uD-hU3" id="6ga-O7-Cgm"/>
+                <outlet property="visitVisitItem" destination="tDg-aB-rs1" id="IHi-W7-UId"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,22 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #define CURRENT_DEVICE_HEIGHT ([[UIScreen mainScreen] bounds].size.height)
+    #define rgbaColor(r,g,b,a) [UIColor colorWithRed:r/255.f green:g/255.f blue:b/255.f alpha:a]
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <CoreData/CoreData.h>
+
+#define VERSION_CHECK_NOTIFICATION @"version check notification"
+#define CURRENT_VERSION ([[[UIDevice currentDevice] systemVersion] floatValue])
+#endif

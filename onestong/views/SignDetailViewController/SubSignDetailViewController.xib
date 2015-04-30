@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SignDetailViewController">
+            <connections>
+                <outlet property="mainTableView" destination="WwW-5v-Yyh" id="0zs-vf-7ZX"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="Vi9-fD-Gw9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="WwW-5v-Yyh">
+                    <rect key="frame" x="0.0" y="5" width="320" height="563"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" red="0.65098039220000004" green="0.66666666669999997" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="320" id="c1A-30-ylT"/>
+                    </constraints>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="baq-mi-rwd"/>
+                        <outlet property="delegate" destination="-1" id="Y11-Qz-dAG"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="0.65098039220000004" green="0.66666666669999997" blue="0.66274509800000003" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="WwW-5v-Yyh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Qkr-xa-hXm"/>
+                <constraint firstAttribute="bottom" secondItem="WwW-5v-Yyh" secondAttribute="bottom" id="h6a-qC-Bwo"/>
+                <constraint firstItem="WwW-5v-Yyh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="5" id="hId-dE-jzn"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

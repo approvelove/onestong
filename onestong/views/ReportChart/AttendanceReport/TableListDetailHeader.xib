@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="wzN-zd-cD1" customClass="TableListDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VOH-dX-zDW">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="12" style="plain" systemItem="fixedSpace" id="GJe-ok-a95"/>
+                        <barButtonItem title="日期" id="u5V-VQ-7vZ"/>
+                        <barButtonItem width="41" style="plain" systemItem="fixedSpace" id="Gfz-ZA-FvA"/>
+                        <barButtonItem title="迟到" id="Wu7-0e-pKj"/>
+                        <barButtonItem title="早退" width="43" id="YXN-Nu-O6e"/>
+                        <barButtonItem title="旷工" id="yXy-iQ-SfI"/>
+                        <barButtonItem title="未签退" width="51" id="xcP-qL-TkG"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="VOH-dX-zDW" firstAttribute="leading" secondItem="wzN-zd-cD1" secondAttribute="leading" id="JHq-SM-RL9"/>
+                <constraint firstItem="VOH-dX-zDW" firstAttribute="top" secondItem="wzN-zd-cD1" secondAttribute="top" id="cnE-jr-VCX"/>
+                <constraint firstAttribute="bottom" secondItem="VOH-dX-zDW" secondAttribute="bottom" id="fWQ-nZ-UE2"/>
+                <constraint firstAttribute="trailing" secondItem="VOH-dX-zDW" secondAttribute="trailing" id="mQq-rF-1RC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="absenteeismItem" destination="yXy-iQ-SfI" id="Gw3-5i-mf7"/>
+                <outlet property="dateItem" destination="u5V-VQ-7vZ" id="hN9-er-8mB"/>
+                <outlet property="earlyOutItem" destination="YXN-Nu-O6e" id="Vzk-zg-wJr"/>
+                <outlet property="lateItem" destination="Wu7-0e-pKj" id="3dY-fx-crk"/>
+                <outlet property="mainToolBar" destination="VOH-dX-zDW" id="6Ws-SJ-do6"/>
+                <outlet property="noSignOutItem" destination="xcP-qL-TkG" id="mJB-aI-Vcu"/>
+            </connections>
+        </view>
+        <view contentMode="scaleToFill" id="K5a-6h-8KK" customClass="TableListDetailHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iZs-Yg-GiI">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem width="12" style="plain" systemItem="fixedSpace" id="flZ-wn-LfX"/>
+                        <barButtonItem title="日期" id="QU0-rc-yv4"/>
+                        <barButtonItem width="28" style="plain" systemItem="fixedSpace" id="Q7H-g0-imE"/>
+                        <barButtonItem title="迟到" id="fwn-64-Oaf"/>
+                        <barButtonItem title="早退" width="43" id="iRy-2h-Jfj"/>
+                        <barButtonItem title="旷工" id="5FM-Mq-NFh"/>
+                        <barButtonItem title="未签退" width="51" id="Y5t-tq-BMT"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iZs-Yg-GiI" secondAttribute="trailing" id="GZc-RO-POx"/>
+                <constraint firstItem="iZs-Yg-GiI" firstAttribute="leading" secondItem="K5a-6h-8KK" secondAttribute="leading" id="bHE-g4-CLz"/>
+                <constraint firstItem="iZs-Yg-GiI" firstAttribute="top" secondItem="K5a-6h-8KK" secondAttribute="top" id="cEC-6h-r1B"/>
+                <constraint firstAttribute="bottom" secondItem="iZs-Yg-GiI" secondAttribute="bottom" id="qNH-Fy-6Nc"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="absenteeismItem" destination="5FM-Mq-NFh" id="KCc-uw-OtA"/>
+                <outlet property="dateItem" destination="QU0-rc-yv4" id="vI6-ub-CGc"/>
+                <outlet property="earlyOutItem" destination="iRy-2h-Jfj" id="WlW-Nc-PjT"/>
+                <outlet property="lateItem" destination="fwn-64-Oaf" id="AZM-oM-DWQ"/>
+                <outlet property="mainToolBar" destination="iZs-Yg-GiI" id="Zrm-rb-Yhb"/>
+                <outlet property="noSignOutItem" destination="Y5t-tq-BMT" id="SaA-yt-A5S"/>
+            </connections>
+        </view>
+    </objects>
+</document>

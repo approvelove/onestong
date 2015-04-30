@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DepartmentListViewController">
+            <connections>
+                <outlet property="constraintTop" destination="GKu-jX-iZK" id="Np1-3V-73k"/>
+                <outlet property="mainTableView" destination="X28-vK-nDN" id="cvi-jo-JGP"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X28-vK-nDN">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="qVy-u5-6ta"/>
+                        <outlet property="delegate" destination="-1" id="qvo-qf-eXI"/>
+                    </connections>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7v9-Vw-ja0">
+                    <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="1a9-QK-ZcH"/>
+                        <constraint firstAttribute="width" constant="320" id="54R-Sb-pfv"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="部门列表" id="qFU-uJ-54u">
+                            <barButtonItem key="leftBarButtonItem" title="取消" id="gmf-SQ-OXW">
+                                <connections>
+                                    <action selector="cancelUserInfoViewController" destination="-1" id="UTj-Am-z2B"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="确定" id="nt9-gQ-uoJ">
+                                <connections>
+                                    <action selector="completeButtonClick" destination="-1" id="la0-VW-TGZ"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="7v9-Vw-ja0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="GKu-jX-iZK"/>
+                <constraint firstAttribute="trailing" secondItem="X28-vK-nDN" secondAttribute="trailing" id="IlW-bx-1Wh"/>
+                <constraint firstItem="X28-vK-nDN" firstAttribute="top" secondItem="7v9-Vw-ja0" secondAttribute="bottom" id="Jor-lf-PfG"/>
+                <constraint firstItem="7v9-Vw-ja0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="XLq-37-Bp8"/>
+                <constraint firstItem="X28-vK-nDN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="a5y-Gf-an7"/>
+                <constraint firstAttribute="bottom" secondItem="X28-vK-nDN" secondAttribute="bottom" id="wM0-wo-9Ay"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

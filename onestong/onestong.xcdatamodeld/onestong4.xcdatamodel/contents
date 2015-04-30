@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6244" systemVersion="13F34" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="CDDepartment" representedClassName="CDDepartment" syncable="YES">
+        <attribute name="deptId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deptname" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="owneremail" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="parentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="valid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDEvent" representedClassName="CDEvent" syncable="YES">
+        <attribute name="createTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="creator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTypeId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventTypeName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="ownerName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publisherId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publisherName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="updateTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="updator" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validSign" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="actual" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPlanAndActual" syncable="YES"/>
+        <relationship name="eventItem" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDEventItem" syncable="YES"/>
+        <relationship name="plan" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDPlanAndActual" syncable="YES"/>
+        <relationship name="remarkImgAry" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDImageSource" syncable="YES"/>
+        <relationship name="signIn" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDResourceInfo" syncable="YES"/>
+        <relationship name="signOut" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="CDResourceInfo" syncable="YES"/>
+    </entity>
+    <entity name="CDEventItem" representedClassName="CDEventItem" syncable="YES">
+        <attribute name="aimInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="resultInfo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="aimResource" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDImageSource" syncable="YES"/>
+        <relationship name="resultResource" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="CDImageSource" syncable="YES"/>
+    </entity>
+    <entity name="CDImageSource" representedClassName="CDImageSource" syncable="YES">
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDPlanAndActual" representedClassName="CDPlanAndActual" syncable="YES">
+        <attribute name="beginAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="beginTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="endAddress" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="endTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isPlan" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="CDResourceInfo" representedClassName="CDResourceInfo" syncable="YES">
+        <attribute name="content" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="createTime" optional="YES" attributeType="Integer 64" defaultValueString="0" syncable="YES"/>
+        <attribute name="eventId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="isSignIn" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="location" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="pictureName" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="CDUser" representedClassName="CDUser" syncable="YES">
+        <attribute name="ca" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="chartAuth" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="companyDepartment" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="companyPosition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="da" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departmentId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="departmentName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="deviceId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="manageDepartmentAuth" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="manageSubDepartmentsAuth" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="needSignIn" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="phone" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="remark" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sa" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="sex" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="userId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="username" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="validSign" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CDDepartment" positionX="115" positionY="-18" width="128" height="135"/>
+        <element name="CDEvent" positionX="439" positionY="236" width="128" height="358"/>
+        <element name="CDEventItem" positionX="27" positionY="135" width="128" height="118"/>
+        <element name="CDImageSource" positionX="153" positionY="144" width="128" height="58"/>
+        <element name="CDPlanAndActual" positionX="45" positionY="153" width="128" height="135"/>
+        <element name="CDResourceInfo" positionX="54" positionY="162" width="128" height="163"/>
+        <element name="CDUser" positionX="-63" positionY="9" width="128" height="345"/>
+    </elements>
+</model>

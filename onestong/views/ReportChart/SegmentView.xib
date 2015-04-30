@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" contentMode="scaleToFill" id="iN0-l3-epB" customClass="SegmentView">
+            <rect key="frame" x="0.0" y="0.0" width="193" height="265"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="19a-Db-GDx">
+                    <rect key="frame" x="0.0" y="0.0" width="193" height="265"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gzN-aq-1hN">
+                            <rect key="frame" x="0.0" y="38" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="DxW-el-26G"/>
+                                <constraint firstAttribute="width" constant="193" id="nEY-N7-K9a"/>
+                            </constraints>
+                            <state key="normal" title="昨   日">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a8W-UD-MBR">
+                            <rect key="frame" x="0.0" y="0.0" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="N8O-Rn-SFj"/>
+                                <constraint firstAttribute="width" constant="193" id="USR-Za-3ZD"/>
+                            </constraints>
+                            <state key="normal" title="今   日">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rVK-zU-3Pf">
+                            <rect key="frame" x="0.0" y="76" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="anF-kk-hbW"/>
+                                <constraint firstAttribute="width" constant="193" id="v0H-AU-N2e"/>
+                            </constraints>
+                            <state key="normal" title="本   周">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pIC-OH-OVJ">
+                            <rect key="frame" x="0.0" y="152" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="NZg-To-eDF"/>
+                                <constraint firstAttribute="width" constant="193" id="qtc-zf-Ka3"/>
+                            </constraints>
+                            <state key="normal" title="本   月">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h2m-FI-AyS">
+                            <rect key="frame" x="0.0" y="228" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="38" id="AYf-eF-8T7"/>
+                                <constraint firstAttribute="width" constant="193" id="MW2-NW-Qqd"/>
+                            </constraints>
+                            <state key="normal" title="其   它">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bQg-NR-wcT">
+                            <rect key="frame" x="0.0" y="190" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="193" id="LU7-7t-swE"/>
+                                <constraint firstAttribute="height" constant="38" id="dcw-eA-Y3n"/>
+                            </constraints>
+                            <state key="normal" title="上   月">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button clipsSubviews="YES" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EF-e0-HWs">
+                            <rect key="frame" x="0.0" y="114" width="193" height="38"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.97254901960784312" green="0.97254901960784312" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="193" id="fBO-fo-mVe"/>
+                                <constraint firstAttribute="height" constant="38" id="muk-zg-DTQ"/>
+                            </constraints>
+                            <state key="normal" title="上   周">
+                                <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WC5-kF-EFa">
+                            <rect key="frame" x="0.0" y="38" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="hmq-7G-vBd"/>
+                                <constraint firstAttribute="width" constant="193" id="p0z-nl-DPg"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wMK-IY-LCv">
+                            <rect key="frame" x="0.0" y="76" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="193" id="DCw-bX-hSP"/>
+                                <constraint firstAttribute="height" constant="0.5" id="wzt-Mw-5Ol"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nbt-ne-hhI">
+                            <rect key="frame" x="0.0" y="113" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="9vs-fI-pJn"/>
+                                <constraint firstAttribute="width" constant="193" id="icD-dC-qYc"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="72r-Un-9u5">
+                            <rect key="frame" x="0.0" y="151" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="193" id="hDp-ic-MF2"/>
+                                <constraint firstAttribute="height" constant="0.5" id="xnG-hG-GZX"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0W7-n7-SD1">
+                            <rect key="frame" x="0.0" y="189" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="193" id="AB9-I1-1vy"/>
+                                <constraint firstAttribute="height" constant="0.5" id="VK5-l5-Ihw"/>
+                            </constraints>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RVz-6I-lLk">
+                            <rect key="frame" x="0.0" y="227" width="193" height="1"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="0.5" id="VQh-VH-ELO"/>
+                                <constraint firstAttribute="width" constant="193" id="lCf-gv-XnO"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="gzN-aq-1hN" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="38" id="0GZ-Pt-tzy"/>
+                        <constraint firstItem="a8W-UD-MBR" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="18z-2a-bGO"/>
+                        <constraint firstItem="WC5-kF-EFa" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="8fY-9f-QOq"/>
+                        <constraint firstItem="wMK-IY-LCv" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="76" id="9Ma-kW-4ud"/>
+                        <constraint firstItem="rVK-zU-3Pf" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="76" id="9PG-BG-3xo"/>
+                        <constraint firstItem="gzN-aq-1hN" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="AXS-ry-HSw"/>
+                        <constraint firstItem="bQg-NR-wcT" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="190" id="Aup-s9-nCd"/>
+                        <constraint firstItem="wMK-IY-LCv" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="GWw-i1-94y"/>
+                        <constraint firstItem="RVz-6I-lLk" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="227" id="J2g-Xj-Uj3"/>
+                        <constraint firstItem="0EF-e0-HWs" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="114" id="LrX-4b-gFX"/>
+                        <constraint firstItem="h2m-FI-AyS" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="O3e-xz-Qwl"/>
+                        <constraint firstItem="a8W-UD-MBR" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" id="U1u-J1-0cJ"/>
+                        <constraint firstItem="0EF-e0-HWs" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="Uyo-3j-ns8"/>
+                        <constraint firstItem="h2m-FI-AyS" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="228" id="VNa-UG-gbO"/>
+                        <constraint firstItem="pIC-OH-OVJ" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="b0Z-4d-bfH"/>
+                        <constraint firstItem="WC5-kF-EFa" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="38" id="ccU-R5-9nx"/>
+                        <constraint firstItem="0W7-n7-SD1" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="189" id="cts-Yb-i6E"/>
+                        <constraint firstItem="bQg-NR-wcT" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="eT0-cc-2Et"/>
+                        <constraint firstItem="72r-Un-9u5" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="gKs-eS-ZmO"/>
+                        <constraint firstItem="nbt-ne-hhI" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="np9-dn-Zxn"/>
+                        <constraint firstAttribute="trailing" secondItem="wMK-IY-LCv" secondAttribute="trailing" id="oix-z4-UjV"/>
+                        <constraint firstItem="pIC-OH-OVJ" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="152" id="pgI-LD-BTf"/>
+                        <constraint firstAttribute="height" constant="265" id="shI-mV-97o"/>
+                        <constraint firstItem="0W7-n7-SD1" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="tuS-0L-l6m"/>
+                        <constraint firstItem="nbt-ne-hhI" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="113" id="vCv-B6-VtO"/>
+                        <constraint firstItem="RVz-6I-lLk" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="wS3-UH-1ec"/>
+                        <constraint firstItem="rVK-zU-3Pf" firstAttribute="leading" secondItem="19a-Db-GDx" secondAttribute="leading" id="zYH-af-6gM"/>
+                        <constraint firstItem="72r-Un-9u5" firstAttribute="top" secondItem="19a-Db-GDx" secondAttribute="top" constant="151" id="zkC-1D-hZU"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="19a-Db-GDx" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Um6-Pq-DXc"/>
+                <constraint firstAttribute="trailing" secondItem="19a-Db-GDx" secondAttribute="trailing" id="Y3q-ye-aY4"/>
+                <constraint firstItem="19a-Db-GDx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="ooR-fh-009"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="currentMonthButton" destination="pIC-OH-OVJ" id="WKg-7c-hwh"/>
+                <outlet property="currentWeekButton" destination="rVK-zU-3Pf" id="AiX-Fb-qWT"/>
+                <outlet property="lastMonthButton" destination="bQg-NR-wcT" id="lYJ-LL-A87"/>
+                <outlet property="lastWeekButton" destination="0EF-e0-HWs" id="aYE-aL-FfV"/>
+                <outlet property="otherDateButton" destination="h2m-FI-AyS" id="EYZ-qp-gmH"/>
+                <outlet property="segmentBar" destination="19a-Db-GDx" id="wes-3O-XDM"/>
+                <outlet property="todayButton" destination="a8W-UD-MBR" id="RRv-zn-iKv"/>
+                <outlet property="yesterdayButton" destination="gzN-aq-1hN" id="cbg-ZH-sGR"/>
+            </connections>
+        </view>
+    </objects>
+</document>

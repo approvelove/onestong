@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableHeader">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" placeholder="搜索" id="fPd-Yo-YWG">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="LMR-bg-Rzq">
+                    <rect key="frame" x="0.0" y="44" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem title="姓名" width="47" id="hLv-8R-kYI"/>
+                        <barButtonItem title="迟到" id="eDn-OT-Zf2"/>
+                        <barButtonItem title="早退" id="74n-in-UsF"/>
+                        <barButtonItem title="旷工" width="40" id="Fil-UU-p68"/>
+                        <barButtonItem width="5" style="plain" systemItem="fixedSpace" id="40p-jd-hFh"/>
+                        <barButtonItem title="未签退" width="40" id="YAe-2v-ROX"/>
+                        <barButtonItem title="拜访" width="40" id="e6X-VP-Q5I"/>
+                    </items>
+                </toolbar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="absenteeismItem" destination="Fil-UU-p68" id="Bjt-zS-iBo"/>
+                <outlet property="earlyOutItem" destination="74n-in-UsF" id="3tZ-UG-QiB"/>
+                <outlet property="lateItem" destination="eDn-OT-Zf2" id="h2C-W4-23C"/>
+                <outlet property="mainSearchBar" destination="fPd-Yo-YWG" id="sfV-MK-u5c"/>
+                <outlet property="mainToolBar" destination="LMR-bg-Rzq" id="D43-Bq-aQt"/>
+                <outlet property="nameItem" destination="hLv-8R-kYI" id="MyG-Fh-27n"/>
+                <outlet property="noSignOutItem" destination="YAe-2v-ROX" id="bJg-nV-BED"/>
+                <outlet property="visitItem" destination="e6X-VP-Q5I" id="Wsk-Gh-nIb"/>
+            </connections>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13D65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PersonListViewController">
+            <connections>
+                <outlet property="mainTableView" destination="3WS-dP-TF2" id="pHa-C4-Z6a"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="3WS-dP-TF2">
+                    <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="UJu-PX-aXE"/>
+                        <outlet property="delegate" destination="-1" id="8Mm-Mk-fS0"/>
+                    </connections>
+                </tableView>
+                <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D6f-vU-5rr">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="64" id="i78-SW-fWR"/>
+                        <constraint firstAttribute="width" constant="320" id="lYG-n9-mnd"/>
+                    </constraints>
+                    <items>
+                        <navigationItem title="人员列表" id="pV5-w8-9aG">
+                            <barButtonItem key="leftBarButtonItem" title="取消" id="erK-1Z-gf2">
+                                <connections>
+                                    <action selector="cancelUserInfoViewController" destination="-1" id="WZc-Xm-FCW"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem key="rightBarButtonItem" title="确定" id="0VY-Lu-dxH">
+                                <connections>
+                                    <action selector="completeButtonClick" destination="-1" id="ZSS-8L-5Za"/>
+                                </connections>
+                            </barButtonItem>
+                        </navigationItem>
+                    </items>
+                </navigationBar>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="3WS-dP-TF2" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="64" id="Gbs-J7-2r1"/>
+                <constraint firstItem="3WS-dP-TF2" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Rec-EH-0q5"/>
+                <constraint firstAttribute="bottom" secondItem="3WS-dP-TF2" secondAttribute="bottom" id="a1m-CH-xTJ"/>
+                <constraint firstItem="D6f-vU-5rr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="bQO-TA-0Yu"/>
+                <constraint firstItem="D6f-vU-5rr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="dc5-xe-IYZ"/>
+                <constraint firstAttribute="trailing" secondItem="3WS-dP-TF2" secondAttribute="trailing" id="ejy-m7-xRQ"/>
+            </constraints>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+</document>

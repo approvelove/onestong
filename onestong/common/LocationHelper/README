@@ -1,0 +1,59 @@
+//说明
+
+//LocationHelper
+LocationHelper 是一个基于cllocation的定位封装，并处理了关于gcj02与wgs84之间的误差操作。定位相对精度较高。使用时，请导入LocationHelper.h
+使用范例如下:
+
+初始化
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(showInfo:) name:NOTIFICATION_LOCATION object:nil];  //该项负责接收地图定位之后的回调
+
+    getter = [[LocationHelper alloc] init];
+    [getter initGPSLocation];
+
+
+
+启动定位
+    [getter startLocation];
+    
+处理回调
+- (void)showInfo:(NSNotification *)notif
+{
+    NSDictionary *myDict = [notif userInfo];
+    addressLabel.text = myDict[@"address"];
+    CLLocationCoordinate2D coordinate;
+    coordinate.latitude = [myDict[@"latitude"] floatValue];
+    coordinate.longitude = [myDict[@"longitude"] floatValue];
+   //在该处可以生成一个经纬度坐标
+}
+
+//MKMapView+LongPressGesture
+
+MKMapView+LongPressGesture 是一个基于MapKit框架的截图类。该类同时包含了一个插针操作，使用时要实现一个uialertviewdelegate,并导入MKMapView+LongPressGesture.h
+
+初始化
+  [mapView setAlertViewDelegate:self]; //alertview设置代理
+  mapView.delegate = self;
+  [mapView addLongPressGesture]; //添加长按触发插针
+
+
+在代理中实现插针操作
+- (void)alertView:(UIAlertView *)alertView clickedButtonAtIndex:(NSInteger)buttonIndex
+{
+    if (buttonIndex == 1) {
+        [mapView showPointAnnotationWithTitle:@"选中位置"];
+        [pointAry addObject:[MKMapView sharedPointAnnitation]];
+        [mapView showAllPointPinOnMapWithPointArrary:pointAry];
+    }
+}
+
+
+在MapKit的代理中实现截图
+
+
+渲染完毕截图
+- (void)mapViewDidFinishRenderingMap:(MKMapView *)mapView fullyRendered:(BOOL)fullyRendered
+{
+    [mapView getMapSnapShot];
+}
+
+
